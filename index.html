@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="container">
+        <h1 class="heading">Contacts List</h1>
+        <div class="contactList">
+            <div class="mycontacts-div">
+                <h1 class="mycontacts">Contacts</h1>
+                <button class="addNewContactBtn"><h2>+ New contact</h2></button>
+            </div>
+            <ul class="contacts">
+
+            </ul>
+        </div>
+
+        <div class="edit-popup" >
+            <form class="edit-popup-content">
+                <div id="edit-error" style="color: red; margin: 3px"></div>
+                <h3 class="edit-close">x</h3>
+                <div class="edit-inputdiv">
+                    <label>First name</label>
+                    <input class="edit-forminput" type="text" id="edit-firstname" name="edit-firstname" placeholder="First Name" required/>
+                </div>
+                
+                <div class="edit-inputdiv">
+                    <label>Last name</label>
+                    <input class="edit-forminput" type="text" id="edit-lastname" name="edit-lastname" placeholder="Last Name" required/>
+                </div>
+               
+                <div class="edit-inputdiv">
+                    <label>Phone Number</label>
+                    <input class="edit-forminput" type="text" id="edit-phonenumber" name="edit-phonenumber" placeholder="Phone Number">
+                </div>
+                
+                <div class="edit-inputdiv">
+                    <label>Email Address</label>
+                    <input class="edit-forminput" type="text" id="edit-email" name="edit-email" placeholder="Email address">
+                </div>
+
+                <button type="submit" class="edit-submitbutton"><h2>Update contact</h2></button>
+            </form>
+        </div>
+
+        <div class="popup">
+            <form class="popup-content" id="form">
+                <div id="error" style="color: red; margin: 3px"></div>
+                <h3 class="close">x</h3>
+                <div class="inputdiv">
+                    <label>First name</label>
+                    <input class="forminput" type="text" id="firstname" name="firstname" placeholder="First Name" required/>
+                </div>
+                
+                <div class="inputdiv">
+                    <label>Last name</label>
+                    <input class="forminput" type="text" id="lastname" name="lastname" placeholder="Last Name" required/>
+                </div>
+               
+                <div class="inputdiv">
+                    <label>Phone Number</label>
+                    <input class="forminput" type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number">
+                </div>
+                
+                <div class="inputdiv">
+                    <label>Email Address</label>
+                    <input class="forminput" type="text" id="email" name="email" placeholder="Email address">
+                </div>
+
+                <button type="submit" class="submitbutton"><h2>Add contact</h2></button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
